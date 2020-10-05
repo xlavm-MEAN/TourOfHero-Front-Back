@@ -27,7 +27,7 @@ Note: The source code of this API is in: [github.com/xlavm/Angular-TourOfHeroes-
 
 ### Back API in the Cloud
 
-
+https://angular-tourofhero-backapi.herokuapp.com/
 
 Note: The source code of this API is in: [github.com/xlavm/Angular-TourOfHeroes-Back](https://github.com/xlavm/Angular-TourOfHeroes-Back)
 
@@ -123,6 +123,8 @@ Sample Response
 -------------------------
 
 ## For Local Work
+
+>Note: To make it work locally, you have to change the address of the node api in the angular services and in the `package.json` put `"start": "ng serve",` into the scripts.
 
 #### Requirements
 

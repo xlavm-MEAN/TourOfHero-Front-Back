@@ -42,3 +42,38 @@ app.listen(process.env.PORT || 8080);
 ```
 
 Additional, copy the dependencies of `DevDependencies` and paste in `Dependencies`. all this into package.json
+
+## For Local Work
+
+>Note: To make it work locally, you have to change the address of the node api to "http://localhost:3000/hero" in the angular services and in the `package.json` put `"start": "ng serve",` into the scripts.
+
+#### Requirements
+
+* Install the Node.js
+* Install the MongoDB
+* Install Angular
+
+#### Execution Instructions
+
+* Clone the repo
+```
+git clone https://github.com/xlavm-MEAN/TourOfHero-Front-Back.git
+```
+* Install the npm packages for the back and front  
+```
+npm install
+```
+* Launch the server back and front 
+```
+npm start
+```
+* Execute the Mongo Daemon 
+```
+mongod
+```
+* Execute the database
+```
+mongo
+use heroes
+```
+>The collections Name is: `hero` and Database Name is: `heroes` in MongoDB
