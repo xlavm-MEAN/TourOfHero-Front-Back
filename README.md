@@ -15,51 +15,26 @@ This is the continuation of development [Tour of Heroes](https://github.com/xlav
 
 ![Components](screenshots/Components.jpg)
 
+---------------------
+## Open the API´s here
+
+### Front API in the Cloud
+
+https://angular-tourofhero-frontapi.herokuapp.com/
+
+Note: The source code of this API is in: [github.com/xlavm/Angular-TourOfHeroes-Front](https://github.com/xlavm/Angular-TourOfHeroes-Front)
 
 
-## For Local Work
+### Back API in the Cloud
 
-#### Requirements
 
-* Install the Node.js
-* Install the MongoDB
-* Install Angular
 
-#### DevEnv Version
+Note: The source code of this API is in: [github.com/xlavm/Angular-TourOfHeroes-Back](https://github.com/xlavm/Angular-TourOfHeroes-Back)
 
-* Angular CLI: 9.0.7
-* Node: 12.16.1
-* OS: win10 x64
-
-#### Execution Instructions
-
-* Clone the repo
-```
-git clone https://github.com/xlavm-MEAN/TourOfHero-Front-Back.git
-```
-* Install the npm packages for the back and front  
-```
-npm install
-```
-* Launch the server back and front 
-```
-npm start
-```
-* Execute the Mongo Daemon 
-```
-mongod
-```
-* Execute the database
-```
-mongo
-use heroes
-```
->The collections Name is: `hero` and Database Name is: `heroes` in MongoDB
-
+-----------------
 
 ## API Reference
 
----
 #### Find-All
 |Endpoint|Method|
 |:--|:--|
@@ -145,4 +120,45 @@ Sample Response
     "name": "BLACK WIDOW"
 }
 ```
+-------------------------
+
+## For Local Work
+
+#### Requirements
+
+* Install the Node.js
+* Install the MongoDB
+* Install Angular
+
+#### DevEnv Version
+
+* Angular CLI: 9.0.7
+* Node: 12.16.1
+* OS: win10 x64
+
+#### Execution Instructions
+
+* Clone the repo
+```
+git clone https://github.com/xlavm-MEAN/TourOfHero-Front-Back.git
+```
+* Install the npm packages for the back and front  
+```
+npm install
+```
+* Launch the server back and front 
+```
+npm start
+```
+* Execute the Mongo Daemon 
+```
+mongod
+```
+* Execute the database
+```
+mongo
+use heroes
+```
+>The collections Name is: `hero` and Database Name is: `heroes` in MongoDB
+
 
