@@ -54,21 +54,6 @@ Sample Response
 ]
 ```
 ---
-#### Search
-|Endpoint|Method|Description|
-|:--|:--|:--|
-|/hero/hero?name=:name|GET|Search by name value|
-
-Sample Response
-```json
-[
-  {
-    "id": 1,
-    "name": "BLACK WIDOW"
-  }
-]
-```
----
 #### Create
 |Endpoint|Method|
 |:--|:--|
@@ -94,7 +79,22 @@ Sample Response
     "name": "BLACK WIDOW"
 }
 ```
+
 ---
+#### Search
+|Endpoint|Method|
+|:--|:--|
+|/hero/search/:name|GET|
+
+Sample Response
+```json
+{
+    "id": 1,
+    "name": "BLACK WIDOW"
+}
+```
+---
+
 #### Update
 |Endpoint|Method|
 |:--|:--|
