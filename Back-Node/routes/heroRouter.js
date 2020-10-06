@@ -25,11 +25,18 @@ heroRouter.route('/').get((req, res) => {
     });
 });
 
-heroRouter.route('/edit/:id').get((req, res) => {
+heroRouter.route('/read/:id').get((req, res) => {
     let id = req.params.id;
     hero.findById(id, (err, heroInstance) => {
         res.json(heroInstance);
     });
+});
+
+heroRouter.route('/search/:name').get((req, res) => {
+    let name = req.params.name;
+    hero.find({"name":name} , (err, heroInstance)=> {//como parametro se envia un JSON con el nombre del atributo
+          res.json(heroInstance);
+      });
 });
 
 heroRouter.route('/update/:id').post((req, res) => {
@@ -39,7 +46,7 @@ heroRouter.route('/update/:id').post((req, res) => {
         } else {
 
 
-            heroInstance .hid=req.body.hid;heroInstance .name=req.body.name;
+            heroInstance .name=req.body.name;
 
 
 
@@ -63,6 +70,8 @@ heroRouter.route('/delete/:id').get((req, res) => {
         }
     });
 });
+
+
 
 module.exports = heroRouter;
 
